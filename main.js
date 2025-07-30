@@ -7,3 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 import { maFonction } from "./module/listecontacts.js";
 
 maFonction();
+
+import { buttonVosContact } from "./modules/sawContact.js";
+
+buttonVosContact();
