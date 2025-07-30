@@ -58,3 +58,54 @@ body {
     color: rgb(235, 21, 21);
     border: none;
 }
+
+// liste contact 
+
+.h3 {
+    color: red;
+}
+
+.ul li {
+    color: red;
+    list-style-type: "- ";
+
+}
+
+.jean {
+    font-weight: bold;
+}
+
+.lea {
+    font-weight: bold;
+}
+
+.Melanie{
+    font-weight: bold;
+}
+
+.numjean {
+    margin-bottom: 0.5cm;
+}
+
+.numlea {
+    margin-bottom: 0.5cm;
+}
+
+.numMelanie {
+    margin-bottom: 0.5cm;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: #ddd;
+    margin: 30px;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
