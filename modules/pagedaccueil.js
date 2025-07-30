@@ -3,7 +3,7 @@ import { createAndAddElement } from "./createAndAddElement.js";
 export function creationPageAccueil() {
   const appRoot = document.getElementById("app-root");
   if (!appRoot) {
-    console.error("Le point d'accès n'a pas été trouvé.");
+    console.error("L'élément n'as pas était trouvé.");
     return;
   }
   appRoot.innerHTML = "";
@@ -12,12 +12,12 @@ export function creationPageAccueil() {
     class: "page-accueil-container",
   });
 
-  const titrePrincipal = createAndAddElement(
-    "h1",
-    divPrincipal,
-    "Gestionnaire de contacts",
-    { class: "titre-application" }
-  );
+  const titrePrincipal = createAndAddElement("h1", divPrincipal, null, {
+    class: "titre-application",
+  });
+  createAndAddElement("span", titrePrincipal, "Gestionnaire de contacts", {
+    class: "titre-ligne",
+  });
 
   const logoPrincipal = createAndAddElement("img", divPrincipal, null, {
     src: "./images/image.png",
@@ -31,7 +31,9 @@ export function creationPageAccueil() {
 
   const labelForListeDeroulante = createAndAddElement(
     "label",
-    divListeDeroulante
+    divListeDeroulante,
+    "",
+    { for: "menu-action" }
   );
 
   const selectElement = createAndAddElement(
@@ -59,8 +61,30 @@ export function creationPageAccueil() {
   createAndAddElement("option", selectElement, "Voir le nombre de contact", {
     value: "compter",
   });
-  createAndAddElement("div", divPrincipal, "Choisir une option", {
-    class: "bouton-option",
+
+  const choisirOption = createAndAddElement(
+    "div",
+    divPrincipal,
+    "Choisir une option",
+    {
+      class: "bouton-choisir-option",
+      id: "bouton-choisir-option",
+    }
+  );
+
+  const contactListDisplay = createAndAddElement("div", divPrincipal, null, {
+    id: "contact-list",
+    class: "hidden-content",
+  });
+
+  const formContactDisplay = createAndAddElement("div", divPrincipal, null, {
+    id: "formulaire-contact",
+    class: "hidden-content",
+  });
+
+  const sawContactDisplay = createAndAddElement("div", divPrincipal, null, {
+    id: "saw-contact",
+    class: "hidden-content",
   });
 
   return divPrincipal;
