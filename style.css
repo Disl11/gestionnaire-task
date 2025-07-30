@@ -9,6 +9,7 @@ body {
   justify-content: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
+  flex-direction: column;
 }
 .page-accueil-container {
   display: flex;
@@ -47,4 +48,13 @@ body {
   background-color: rgb(165, 165, 165);
   color: rgb(152, 22, 22);
   border-radius: 20px;
+}
+// Bouton contact
+
+.btnVosContact{
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    color: rgb(235, 21, 21);
+    border: none;
 }
