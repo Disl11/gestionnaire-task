@@ -1,0 +1,170 @@
+<<<<<<< Updated upstream
+=======
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.page-accueil-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.titre-application {
+  display: flex;
+  align-items: center;
+  padding-bottom: 50px;
+  color: rgb(152, 22, 22);
+  font-size: 2rem;
+}
+.logo-principal {
+  width: 50%;
+  height: auto;
+}
+.select-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.select-menu {
+  padding: 5px 50px;
+  margin-bottom: 20px;
+  background-color: rgb(152, 22, 22);
+  color: white;
+}
+.select-menu:hover {
+  background-color: grey;
+}
+.bouton-option {
+  padding: 10px 50px;
+  background-color: rgb(165, 165, 165);
+  color: rgb(152, 22, 22);
+  border-radius: 20px;
+}
+
+.divVosContact {
+  height: 40px;
+  width: 200px;
+  border-radius: 5px;
+  color: rgb(152, 22, 22);
+  border: none;
+}
+
+.h3 {
+  color: rgb(152, 22, 22);
+}
+
+.ul li {
+  color: rgb(152, 22, 22);
+  list-style-type: "- ";
+}
+
+.jean {
+  font-weight: bold;
+  margin-bottom: 0.2cm;
+}
+
+.lea {
+  font-weight: bold;
+  margin-bottom: 0.2cm;
+}
+
+.Melanie {
+  font-weight: bold;
+  margin-bottom: 0.2cm;
+}
+
+.numjean {
+  margin-bottom: 0.5cm;
+}
+
+.numlea {
+  margin-bottom: 0.5cm;
+}
+
+.numMelanie {
+  margin-bottom: 0.5cm;
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: #ddd;
+  margin: 30px;
+  color: rgb(152, 22, 22);
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#formulaireDiv {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  gap: 10px;
+  padding: 50px;
+  background-color: #ddd;
+  color: rgb(152, 22, 22);
+}
+#btnValider {
+  background-color: rgb(152, 22, 22);
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  transition: 0.2s ease;
+}
+input {
+  border: 1px solid rgb(152, 22, 22);
+}
+#btnValider:hover {
+  background-color: blueviolet;
+  color: aliceblue;
+}
+#btnValider:active {
+  transform: scale(0.9);
+}
+.btnVosContact {
+  padding: 20px 50px;
+  margin: 30px;
+  background-color: #ddd;
+  color: rgb(152, 22, 22);
+  border-radius: 10px;
+}
+.page-chargement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#app-root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bouton-choisir-option {
+  padding: 20px 60px;
+  background-color: #ddd;
+  color: rgb(152, 22, 22);
+  border-radius: 10px;
+}
+>>>>>>> Stashed changes
