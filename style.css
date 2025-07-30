@@ -1,8 +1,55 @@
-body{
-display: flex;
-align-items: center;
-flex-direction: column;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  flex-direction: column;
+}
+.page-accueil-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+}
+.titre-application {
+  display: flex;
+  align-items: center;
+  padding-bottom: 50px;
+  color: rgb(152, 22, 22);
+  font-size: 2.5rem;
+}
+.logo-principal {
+  width: 50%;
+  height: auto;
+}
+.select-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.select-menu {
+  padding: 5px 50px;
+  margin-bottom: 20px;
+  background-color: rgb(152, 22, 22);
+  color: white;
+}
+.select-menu:hover {
+  background-color: grey;
+}
+.bouton-option {
+  padding: 10px 50px;
+  background-color: rgb(165, 165, 165);
+  color: rgb(152, 22, 22);
+  border-radius: 20px;
+}
+// Bouton contact
 
 .btnVosContact{
     height: 40px;
@@ -11,3 +58,54 @@ flex-direction: column;
     color: rgb(235, 21, 21);
     border: none;
 }
+
+// liste contact 
+
+.h3 {
+    color: red;
+}
+
+.ul li {
+    color: red;
+    list-style-type: "- ";
+
+}
+
+.jean {
+    font-weight: bold;
+}
+
+.lea {
+    font-weight: bold;
+}
+
+.Melanie{
+    font-weight: bold;
+}
+
+.numjean {
+    margin-bottom: 0.5cm;
+}
+
+.numlea {
+    margin-bottom: 0.5cm;
+}
+
+.numMelanie {
+    margin-bottom: 0.5cm;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: #ddd;
+    margin: 30px;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
