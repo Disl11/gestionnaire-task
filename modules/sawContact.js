@@ -1,5 +1,5 @@
 export function buttonVosContact() {
-  let nbrContacts = 0;
+  let nbrContacts = 3;
 
   const divVosContact = document.createElement("div");
   divVosContact.classList.add("btnVosContact");

@@ -9,7 +9,4 @@ export function pageAccueilChargement(parentElement) {
     alt: "logo de l'application",
     class: "logo-principal",
   });
-  createAndAddElement("p", divPrincipal, "Chargement en cours...", {
-    class: "texte-chargement",
-  });
 }

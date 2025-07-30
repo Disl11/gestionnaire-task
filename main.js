@@ -28,8 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    selectMenu.addEventListener("change", (event) => {
-      const selectedValue = event.target.value;
+    selectMenu.addEventListener("change", (e) => {
+      const selectedValue = e.target.value;
 
       contactList.innerHTML = "";
       contactList.style.display = "none";

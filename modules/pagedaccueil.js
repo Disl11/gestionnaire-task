@@ -12,12 +12,14 @@ export function creationPageAccueil() {
     class: "page-accueil-container",
   });
 
-  const titrePrincipal = createAndAddElement("h1", divPrincipal, null, {
-    class: "titre-application",
-  });
-  createAndAddElement("span", titrePrincipal, "Gestionnaire de contacts", {
-    class: "titre-ligne",
-  });
+  const titrePrincipal = createAndAddElement(
+    "h1",
+    divPrincipal,
+    "Gestionnaire de contacts",
+    {
+      class: "titre-application",
+    }
+  );
 
   const logoPrincipal = createAndAddElement("img", divPrincipal, null, {
     src: "./images/image.png",
