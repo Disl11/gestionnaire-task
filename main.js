@@ -36,7 +36,7 @@ btnValider.type = "button";
 btnValider.value = "Valider";
 btnValider.style.background = "red";
 container.appendChild(btnValider);
-
+//
 btnValider.addEventListener("click", () => {
   const nom = document.getElementById("Nom").value.trim();
   const prenom = document.getElementById("Prenom").value.trim();
