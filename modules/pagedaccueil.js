@@ -1,11 +1,12 @@
-import { createAndAddElement } from "./Fonction_Creation_Elements/createAndAddElement.js";
+import { createAndAddElement } from "./createAndAddElement.js";
 
 export function creationPageAccueil() {
   const appRoot = document.getElementById("app-root");
   if (!appRoot) {
-    console.error("Le point d'accès n'a pas était trouvé.");
+    console.error("Le point d'accès n'a pas été trouvé.");
     return;
   }
+  appRoot.innerHTML = "";
 
   const divPrincipal = createAndAddElement("div", appRoot, null, {
     class: "page-accueil-container",
@@ -14,7 +15,7 @@ export function creationPageAccueil() {
   const titrePrincipal = createAndAddElement(
     "h1",
     divPrincipal,
-    "Gestionnaire de contact",
+    "Gestionnaire de contacts",
     { class: "titre-application" }
   );
 
@@ -30,9 +31,7 @@ export function creationPageAccueil() {
 
   const labelForListeDeroulante = createAndAddElement(
     "label",
-    divListeDeroulante,
-    "Que voulez-vous faire ?",
-    { for: "menu-action" }
+    divListeDeroulante
   );
 
   const selectElement = createAndAddElement(
@@ -45,7 +44,7 @@ export function creationPageAccueil() {
     }
   );
 
-  createAndAddElement("option", selectElement, "Choisir une option", {
+  createAndAddElement("option", selectElement, "Que voulez-vous faire ?", {
     value: "default",
     selected: true,
     disabled: true,
@@ -59,6 +58,9 @@ export function creationPageAccueil() {
   });
   createAndAddElement("option", selectElement, "Voir le nombre de contact", {
     value: "compter",
+  });
+  createAndAddElement("div", divPrincipal, "Choisir une option", {
+    class: "bouton-option",
   });
 
   return divPrincipal;
