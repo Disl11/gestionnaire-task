@@ -51,61 +51,59 @@ body {
 }
 // Bouton contact
 
-.btnVosContact{
-    height: 40px;
-    width: 200px;
-    border-radius: 5px;
-    color: rgb(235, 21, 21);
-    border: none;
+.btnVosContact {
+  height: 40px;
+  width: 200px;
+  border-radius: 5px;
+  color: rgb(235, 21, 21);
+  border: none;
 }
 
-// liste contact 
+// liste contact
 
 .h3 {
-    color: red;
+  color: red;
 }
 
 .ul li {
-    color: red;
-    list-style-type: "- ";
-
+  color: red;
+  list-style-type: "- ";
 }
 
 .jean {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .lea {
-    font-weight: bold;
+  font-weight: bold;
 }
 
-.Melanie{
-    font-weight: bold;
+.Melanie {
+  font-weight: bold;
 }
 
 .numjean {
-    margin-bottom: 0.5cm;
+  margin-bottom: 0.5cm;
 }
 
 .numlea {
-    margin-bottom: 0.5cm;
+  margin-bottom: 0.5cm;
 }
 
 .numMelanie {
-    margin-bottom: 0.5cm;
+  margin-bottom: 0.5cm;
 }
 
 .container {
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    background-color: #ddd;
-    margin: 30px;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: #ddd;
+  margin: 30px;
 }
 
 h3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
