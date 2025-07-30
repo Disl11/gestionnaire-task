@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 import { creationPageAccueil } from "./modules/pagedaccueil.js";
 import { pageAccueilChargement } from "./modules/pageChargement.js";
 import { maFonction } from "./modules/listecontacts.js";
@@ -66,4 +64,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }, 2000);
 });
->>>>>>> Stashed changes
