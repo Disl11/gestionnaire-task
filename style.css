@@ -1,0 +1,13 @@
+body{
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+.btnVosContact{
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    color: rgb(235, 21, 21);
+    border: none;
+}
