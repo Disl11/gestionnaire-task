@@ -4,7 +4,7 @@ let count = 0;
 const container = document.createElement("div");
 document.body.appendChild(container);
 
-// Compteur
+// 
 
 const titleNom = document.createElement("h1");
 titleNom.textContent = "Nom";
@@ -34,14 +34,18 @@ inputNumero.id = "Numero";
 inputNumero.placeholder = "Numéro";
 container.appendChild(inputNumero);
 
-const btnValider = document.createElement("input");
-btnValider.type = "button";
-btnValider.value = "Valider";
-btnValider.style.background = "red";
 
-container.appendChild(btnValider);
-
+//
 btnValider.addEventListener("click", () => {
+  const nom = document.getElementById("Nom").value.trim();
+  const prenom = document.getElementById("Prenom").value.trim();
+  const tel = document.getElementById("Numero").value.trim();
+
+  if (!nom || !prenom || !tel) {
+    alert("Veuillez saisir les champs obligatoires");
+    return;
+  }
+
   count++;
-  counterEl.textContent = count;
+  alert(`Formulaire validé !`);
 });
