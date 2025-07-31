@@ -1,14 +1,15 @@
-export function buttonVosContact() {
-  let nbrContacts = 0;
 
-  const btnVosContact = document.createElement("button");
-  btnVosContact.classList.add("btnVosContact");
-  btnVosContact.textContent = "Vous avez " + nbrContacts + " contacts";
-  document.body.appendChild(btnVosContact);
+export function buttonVosContact(container) {
+  container.innerHTML = ""; // Vide le conteneur
 
-  // btnVosContact.addEventListener("click", function () {
-  //   document.location.href = "";
-  // });
-  return btnVosContact;
+  const nbrContacts = 3;
+
+  const divVosContact = document.createElement("div");
+  divVosContact.classList.add("btnVosContact");
+  divVosContact.textContent = `Vous avez ${nbrContacts} contacts`;
+
+  container.appendChild(divVosContact);
+
+  return divVosContact;
 }
-// buttonVosContact();
+

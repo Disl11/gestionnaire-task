@@ -1,68 +1,56 @@
- export function maFonction() {
 
-   
+export function maFonction(container) {
+  container.innerHTML = "";
 
+  // -------------------------------------------------div------------
+  const nouvelleDiv = document.createElement("div");
+  nouvelleDiv.setAttribute("class", "division container");
+  container.appendChild(nouvelleDiv);
 
+  // ------------------------------------------------titre-----------
 
-//  const nouvelleDiv = document.createElement("div");
-// document.body.appendChild(nouvelleDiv);
-// nouvelleDiv.testContent ="ma div";
-// -------------------------------------------------div------------
+  const listeH3 = document.createElement("h3");
+  listeH3.setAttribute("class", "h3");
+  listeH3.textContent = "Liste de vos contacts";
+  nouvelleDiv.appendChild(listeH3);
 
-const nouvelleDiv = document.createElement("div");
-document.body.appendChild(nouvelleDiv);
-nouvelleDiv.setAttribute("class", "division container");
-// nouvelleDiv.textContent = " ma div ";
+  // ---------------------------------ul-----------------------
 
-// ------------------------------------------------titre-----------
+  const listeUl = document.createElement("ul");
+  listeUl.setAttribute("class", "ul");
+  nouvelleDiv.appendChild(listeUl);
 
-const listeH3 = document.createElement("h3");
-nouvelleDiv.appendChild(listeH3);
-listeH3.setAttribute("class", "h3");
-listeH3.textContent = "Liste de vos contacts";
+  // ----------------------------------------jean--------------------
+  const nomJean = document.createElement("li");
+  nomJean.setAttribute("class", "jean");
+  nomJean.textContent = "Jean Aymare";
+  listeUl.appendChild(nomJean);
 
-      // ---------------------------------ul-----------------------
+  const numeroJean = document.createElement("li");
+  numeroJean.setAttribute("class", "numjean");
+  numeroJean.textContent = "06 85 45 69 95";
+  listeUl.appendChild(numeroJean);
 
-const listeUl = document.createElement("ul");
-nouvelleDiv.appendChild(listeUl);
-listeUl.setAttribute("class", "ul");
-// listeUl.textContent = "ul";
+  //------------------------------------------lea--------------------
+  const nomLea = document.createElement("li");
+  nomLea.setAttribute("class", "lea");
+  nomLea.textContent = "Léa Ricault";
+  listeUl.appendChild(nomLea);
 
-// ----------------------------------------jean--------------------
+  const numeroLea = document.createElement("li");
+  numeroLea.setAttribute("class", "numlea");
+  numeroLea.textContent = "06 85 45 69 95";
+  listeUl.appendChild(numeroLea);
 
-const nomJean = document.createElement("li");
-listeUl.appendChild(nomJean);
-nomJean.setAttribute("class", "jean");
-nomJean.textContent = "Jean Aymare";
+  // -----------------------------------------melanie-----------
+  const nomMelanie = document.createElement("li");
+  nomMelanie.setAttribute("class", "Melanie");
+  nomMelanie.textContent = "Mélanie Zetteaufré";
+  listeUl.appendChild(nomMelanie);
 
-const numeroJean = document.createElement("li");
-listeUl.appendChild(numeroJean);
-numeroJean.setAttribute("class", "numjean");
-numeroJean.textContent = "06 85 45 69 95";
+  const numeroMelanie = document.createElement("li");
+  numeroMelanie.setAttribute("class", "numMelanie");
+  numeroMelanie.textContent = "06 85 45 69 95";
+  listeUl.appendChild(numeroMelanie);
+}
 
-//------------------------------------------lea--------------------
-
-const nomLea = document.createElement("li");
-listeUl.appendChild(nomLea);
-nomLea.setAttribute("class", "lea");
-nomLea.textContent = "Léa Ricault";
-
-const numeroLea = document.createElement("li");
-listeUl.appendChild(numeroLea);
-numeroLea.setAttribute("class", "numlea");
-numeroLea.textContent = "06 85 45 69 95";
-
-// -----------------------------------------melanie-----------
-
-const nomMelanie = document.createElement("li");
-listeUl.appendChild(nomMelanie);
-nomMelanie.setAttribute("class", "Melanie");
-nomMelanie.textContent = "Mélanie Zetteaufré";
-
-const numeroMelanie = document.createElement("li");
-listeUl.appendChild(numeroMelanie);
-numeroMelanie.setAttribute("class", "numMelanie");
-numeroMelanie.textContent = "06 85 45 69 95";
-
-
-};
