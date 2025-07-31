@@ -1,13 +1,17 @@
 import { creationPageAccueil } from "./modules/pagedaccueil.js";
 import { pageAccueilChargement } from "./modules/pageChargement.js";
+
 import { maFonction } from "./modules/listecontacts.js";
 import { formContact } from "./modules/ajouterContact.js";
 import { buttonVosContact } from "./modules/sawContact.js";
 
+
 document.addEventListener("DOMContentLoaded", () => {
   const appRoot = document.getElementById("app-root");
   if (!appRoot) {
+
     console.error("L'élément n'a pas été trouvé.");
+
     return;
   }
 
@@ -17,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     appRoot.innerHTML = "";
     creationPageAccueil();
+
 
     const choisirOption = document.getElementById("bouton-choisir-option");
     const selectMenu = document.getElementById("menu-action");
@@ -62,5 +67,6 @@ document.addEventListener("DOMContentLoaded", () => {
           break;
       }
     });
+
   }, 2000);
 });

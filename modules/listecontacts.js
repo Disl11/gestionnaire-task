@@ -1,3 +1,4 @@
+
 export function maFonction(container) {
   container.innerHTML = "";
 
@@ -52,3 +53,4 @@ export function maFonction(container) {
   numeroMelanie.textContent = "06 85 45 69 95";
   listeUl.appendChild(numeroMelanie);
 }
+

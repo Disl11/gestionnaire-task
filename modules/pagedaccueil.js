@@ -3,6 +3,7 @@ import { createAndAddElement } from "./createAndAddElement.js";
 export function creationPageAccueil() {
   const appRoot = document.getElementById("app-root");
   if (!appRoot) {
+
     console.error("L'élément n'as pas était trouvé.");
     return;
   }
@@ -16,9 +17,11 @@ export function creationPageAccueil() {
     "h1",
     divPrincipal,
     "Gestionnaire de contacts",
+
     {
       class: "titre-application",
     }
+
   );
 
   const logoPrincipal = createAndAddElement("img", divPrincipal, null, {
@@ -33,9 +36,11 @@ export function creationPageAccueil() {
 
   const labelForListeDeroulante = createAndAddElement(
     "label",
+
     divListeDeroulante,
     "",
     { for: "menu-action" }
+
   );
 
   const selectElement = createAndAddElement(
@@ -64,6 +69,7 @@ export function creationPageAccueil() {
     value: "compter",
   });
 
+
   const choisirOption = createAndAddElement(
     "div",
     divPrincipal,
@@ -87,6 +93,7 @@ export function creationPageAccueil() {
   const sawContactDisplay = createAndAddElement("div", divPrincipal, null, {
     id: "saw-contact",
     class: "hidden-content",
+
   });
 
   return divPrincipal;

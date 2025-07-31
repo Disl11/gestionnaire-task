@@ -8,24 +8,30 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   flex-direction: column;
   min-height: 100vh;
+
 }
 .page-accueil-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   padding: 20px;
+
 }
 .titre-application {
   display: flex;
   align-items: center;
   padding-bottom: 50px;
   color: rgb(152, 22, 22);
+
   font-size: 2rem;
+
 }
 .logo-principal {
   width: 50%;
@@ -52,6 +58,7 @@ body {
   border-radius: 20px;
 }
 
+
 .divVosContact {
   height: 40px;
   width: 200px;
@@ -66,22 +73,29 @@ body {
 
 .ul li {
   color: rgb(152, 22, 22);
+
   list-style-type: "- ";
 }
 
 .jean {
   font-weight: bold;
+
   margin-bottom: 0.2cm;
+
 }
 
 .lea {
   font-weight: bold;
+
   margin-bottom: 0.2cm;
+
 }
 
 .Melanie {
   font-weight: bold;
+
   margin-bottom: 0.2cm;
+
 }
 
 .numjean {
@@ -99,17 +113,20 @@ body {
 .container {
   justify-content: center;
   align-items: center;
+
   padding: 40px;
   border-radius: 20px;
   background-color: #ddd;
   margin: 30px;
   color: rgb(152, 22, 22);
+
 }
 
 h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+
   margin-bottom: 20px;
 }
 
@@ -165,4 +182,5 @@ input {
   background-color: #ddd;
   color: rgb(152, 22, 22);
   border-radius: 10px;
+
 }

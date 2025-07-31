@@ -1,3 +1,4 @@
+
 export function buttonVosContact(container) {
   container.innerHTML = ""; // Vide le conteneur
 
@@ -11,3 +12,4 @@ export function buttonVosContact(container) {
 
   return divVosContact;
 }
+
